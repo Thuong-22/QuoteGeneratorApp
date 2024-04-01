@@ -1,38 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+.button-random {
+  cursor: pointer;
+  color: #4F4F4F;
+  float: right;
+  margin-top: 30px;
+  margin-right: 96px;
+  margin-left: auto;
+  top: 30px;
+  right: 96px;
+  display: flex;
+  align-items: center;
+
+  p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 7px;
+  }
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.flow-quotes {
+  margin: auto;
+  display: inline-block;
+  margin-top: 48px;
+  height: 100%;
+
+  .name-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 140px;
+    margin-left: 99px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .quote {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 140px;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    p {
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      font-size: 36px;
+      display: inline-block;
+      width: 614px;
+      color: #000000;
+
+
+      line-height: 43.2px;
+
+    }
+
+    .vl {
+      width: 8px;
+      /* height: 301px; */
+      height: auto;
+      background-color: #F7DF94;
+      float: left;
+      margin-right: 100px;
+    }
+
   }
+
+}
+
+.btn-author {
+  width: 672px;
+  height: 151px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 95px;
+  margin-bottom: 180px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 50px 30px;
+
+  .author {
+    .authorname {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      color: #4F4F4F;
+      margin-bottom: 8px;
+    }
+
+    .authorjob {
+      font-family: "Raleway", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #828282;
+    }
+  }
+
+  .material-icons-outlined {
+    color: #ffffff;
+    font-size: 38px;
+  }
+
+  &:hover {
+    background-color: #333333;
+
+    .authorname,
+    .material-icons-outlined {
+      color: #F2F2F2;
+    }
+  }
+
 }
